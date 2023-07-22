@@ -1,9 +1,14 @@
 
+import Nav from './components/navegation/navegation'
+
+
 function App() {
+
+
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <>
+    <Nav/>
+    </>
   )
 }
 
