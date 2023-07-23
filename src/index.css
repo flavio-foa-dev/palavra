@@ -52,11 +52,13 @@ table {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --ColorPrimary: #F44336;
   --ColorSecondary: #03A9F4;
-  --ColorAzukClaro: #00B2CA;
-  --btn: #E44444;
+
+  --ColorAzulClaro: #00B2CA;
+  --ColorLaranjaMedio: #E44444;
   --btnhover: #FF6A50;
 
   --hero: #CBDADE;
   --cinzamedio:  #666666;
   --footer: #25323F;
 }
+
