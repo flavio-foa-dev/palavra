@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styles from './nav.module.css'
 import logo from '../../assets/logos/logo.png'
 import classNames from 'classnames'
+import navegation from '../../data/navegation.json'
 //import { useLocation } from 'react-router-dom';
 
 export default function Nav2() {
@@ -27,11 +28,9 @@ export default function Nav2() {
     <div className={styles.container}>
       <span><img src={logo} alt="logo"/></span>
       <ul className={styles.ul}>
-        <li>Home</li>
-        <li>Palavra</li>
-        <li>Devocional</li>
-        <li>Historia</li>
-        <li>Livros</li>
+        {navegation.map((item, index)=>
+          <li key={index}>{item.nome}</li>
+        )}
       </ul>
       <div className={styles.container__bar} onClick={()=> handleClick()}>
           <div className={classNames({
