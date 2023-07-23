@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './nav.module.css'
 import logo from '../../assets/logos/logo.png'
+import classNames from 'classnames'
 //import { useLocation } from 'react-router-dom';
 
 export default function Nav2() {
@@ -33,9 +34,18 @@ export default function Nav2() {
         <li>Livros</li>
       </ul>
       <div className={styles.container__bar} onClick={()=> handleClick()}>
-          <div id="bar1" className={styles.bar}></div>
-          <div id="bar2" className={styles.bar}></div>
-          <div id="bar3" className={styles.bar}></div>
+          <div className={classNames({
+              [styles.bar]: true,
+              [styles.bar1]: toggle
+            })}></div>
+          <div className={classNames({
+              [styles.bar]: true,
+              [styles.bar2]: toggle
+            })}></div>
+          <div className={classNames({
+              [styles.bar]: true,
+              [styles.bar3]: toggle
+            })}></div>
       </div>
     </div>
   )
