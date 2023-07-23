@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px
+}
+
+.container__bar {
+  width: 35px;
+  height: 35px;
+
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px;
+  background-color: rgb(0, 0, 0);
+}
+
+.bar {
+  height: 5px;
+  width: 90%;
+  background-color: var(--ColorAzukClaro);
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.ul{
+  display: flex;
+}
+
+.ul li {
+  padding: 3px 1px;
+  margin-left: 20px;
+
+  cursor: pointer;
+
+}
+
+.ul li:hover {
+  border-bottom: 2px solid rgb(228, 8, 8);
+}
+
+.ul li:focus {
+ color: rgb(228, 8, 8);
+}
+

@@ -1,5 +1,6 @@
+import Hero from './components/hero/hero'
+import Nav2 from './components/nav2/nav2'
 
-import Nav from './components/navegation/navegation'
 
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
 
   return (
     <>
-    <Nav/>
+    <Nav2/>
+    <Hero/>
     </>
   )
 }
