@@ -52,8 +52,8 @@
   border-bottom: 2px solid var(--ColorLaranjaMedio)
 }
 
-.li:checked {
-  color: var(--ColorLaranjaMedio)
+.ative {
+  border-bottom: 2px solid var(--ColorLaranjaMedio)
 }
 
 .bar1{

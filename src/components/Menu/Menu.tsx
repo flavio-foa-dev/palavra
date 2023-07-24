@@ -4,25 +4,15 @@ import logo from '../../assets/logos/logo.png';
 import classNames from 'classnames';
 import dataMenu from '../../data/navegation.json';
 import { Link } from 'react-router-dom';
-//import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 export default function Menu() {
-  //const url = useLocation();
-  //console.log(url);
+  const url = useLocation();
+  console.log(url.pathname);
   const [toggle, setToggle] = useState(false);
 
   function handleClick() {
     setToggle(!toggle);
-    console.log(toggle, 'hello word');
-
-  //   <nav className="flex items-center justify-center h-[6rem] gap-3">
-  //   <Link to='/'>
-  //     <p className={url.pathname === '/' ? styles.ative : ''}>Home</p>
-  //   </Link>
-  //   <Link to='/sobre'>
-  //     <p className={url.pathname === '/sobre' ? styles.ative : ''}>Sobre</p>
-  //   </Link>
-  // </nav>
   }
 
   return (
@@ -32,7 +22,7 @@ export default function Menu() {
         <ul className={styles.ul}>
           {dataMenu.map((item) =>
             <Link className={styles.link} to={item.link} key={item.nome}>
-              <li className={styles.li} >{item.nome}</li>
+              <li className={url.pathname == item.link ?`${styles.li} ${styles.ative}` :styles.li} >{item.nome}</li>
             </Link>
           )}
         </ul>
