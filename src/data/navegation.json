@@ -1,23 +1,23 @@
 [
   {
     "nome": "Home",
-    "link": "http://"
+    "link": "/"
   },
   {
     "nome": "Palavra",
-    "link": "http://"
+    "link": "/palavra"
   },
   {
     "nome": "Devocional",
-    "link": "http://"
+    "link": "/devocional"
   },
   {
     "nome": "Historia",
-    "link": "http://"
+    "link": "/historia"
   },
   {
     "nome": "Livros",
-    "link": "http://"
+    "link": "/livro"
   }
 ]
 

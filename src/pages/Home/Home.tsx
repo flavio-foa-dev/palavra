@@ -1,12 +1,10 @@
-import Hero from '../../components/hero/hero'
-import Menu from '../../components/Menu/Menu'
+import Hero from '../../components/hero/hero';
 
 function Home() {
   return (
     <>
-    <Menu/>
-    <Hero/>
+      <Hero/>
     </>
-  )
+  );
 }
-export default Home
+export default Home;

@@ -40,19 +40,20 @@
   display: none;
 }
 
-.ul li {
+.li {
   padding: 3px 1px;
   margin-left: 20px;
   border-bottom: 2px solid rgb(250, 250, 250);
+  color: #333;
   cursor: pointer;
 }
 
-.ul li:hover {
+.li:hover {
   border-bottom: 2px solid var(--ColorLaranjaMedio)
 }
 
-.ul li:active {
- color: var(--ColorLaranjaMedio)
+.li:checked {
+  color: var(--ColorLaranjaMedio)
 }
 
 .bar1{
@@ -84,7 +85,7 @@
 .menu__item {
   padding: 12px 24px;
   color: #333;
-  background-color: rgba(9, 31, 94, 0.4);
+  background-color: rgba(65, 65, 99, 0.4);
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -93,6 +94,9 @@
 }
 .menu__item:hover {
   background-color: #CFD8DC;
+}
+.link{
+  text-decoration: none;
 }
 
 
