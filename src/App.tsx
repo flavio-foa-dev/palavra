@@ -1,17 +1,12 @@
 import Hero from './components/hero/hero'
-import Nav2 from './components/nav2/nav2'
-
-
+import Menu from './components/Menu/Menu'
 
 function App() {
-
-
   return (
     <>
-    <Nav2/>
+    <Menu/>
     <Hero/>
     </>
   )
 }
-
 export default App

@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import styles from './nav.module.css'
+import styles from './menu.module.css'
 import logo from '../../assets/logos/logo.png'
 import classNames from 'classnames'
-import navegation from '../../data/navegation.json'
+import dataMenu from '../../data/navegation.json'
 //import { useLocation } from 'react-router-dom';
 
-export default function Nav2() {
+export default function Menu() {
   //const url = useLocation();
   //console.log(url);
   const [toggle, setToggle] = useState(false)
@@ -25,10 +25,11 @@ export default function Nav2() {
   }
 
   return (
+    <>
     <div className={styles.container}>
       <span><img src={logo} alt="logo"/></span>
       <ul className={styles.ul}>
-        {navegation.map((item, index)=>
+        {dataMenu.map((item, index) =>
           <li key={index}>{item.nome}</li>
         )}
       </ul>
@@ -47,5 +48,13 @@ export default function Nav2() {
             })}></div>
       </div>
     </div>
+      <div className={`${styles.menu_bg }`}>
+      <ul className={!toggle? styles.display: ""}>
+        {dataMenu.map((item, index) =>
+          <li className={styles.menu__item } key={index}>{item.nome}</li>
+        )}
+      </ul>
+      </div>
+    </>
   )
 }
