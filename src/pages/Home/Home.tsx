@@ -1,7 +1,12 @@
-import React from 'react'
+import Hero from '../../components/hero/hero'
+import Menu from '../../components/Menu/Menu'
 
-export default function Home() {
+function Home() {
   return (
-    <div>Home</div>
+    <>
+    <Menu/>
+    <Hero/>
+    </>
   )
 }
+export default Home
