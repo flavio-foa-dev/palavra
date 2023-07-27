@@ -46,14 +46,18 @@
   border-bottom: 2px solid rgb(250, 250, 250);
   color: #333;
   cursor: pointer;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .li:hover {
-  border-bottom: 2px solid var(--ColorLaranjaMedio)
+  border-bottom: 2px solid #868585
 }
 
 .ative {
-  border-bottom: 2px solid var(--ColorLaranjaMedio)
+  border-bottom: 2px solid #868585
 }
 
 .bar1{
@@ -73,13 +77,12 @@
 .menu_bg {
   display: flex;
   z-index: 1;
-  width: 70%;
+  width: 100%;
   height: 50%;
   position: absolute;
-  padding: 0.7rem;
+  padding: 0 0;
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--btnhover)
 }
 
 .menu__item {
@@ -98,7 +101,6 @@
 .link{
   text-decoration: none;
 }
-
 
 @media  (min-width: 768px){
   .container__bar {
